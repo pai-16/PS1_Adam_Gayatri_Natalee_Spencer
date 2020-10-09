@@ -11,9 +11,10 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-### Group Member 1: Your name here
-### Group Member 2: Your name here
-### Group Member 3: Your name here
+### Group Member 1: Natalee Morris
+### Group Member 2: Spenceer Segal
+### Group Member 3: Gayatri Pai
+### Group Member 4: Adam Duvall
 
 
 
