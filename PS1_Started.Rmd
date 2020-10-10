@@ -200,13 +200,13 @@ The estimate of B1*V1 is not biased because ultimately the equation is still the
 **Question 4: The code below generates a scatter plot and regression line for the relationship between $V_1$ and $Y$ as well as $V_1$ and $Y_{adj}$. Submit an improved visualization of this data. Hint: you will need to delete the # to get the code to run **
 
 ```{r key 4}
+Y_adj <- out$Y-B2*out$V2
 plotted<-ggplot(out, aes(V1, y = value, color = variable)) + 
-    geom_point(aes(y = Y, col = "Y")) + 
-    geom_point(aes(y = Y_adj, col = "Y_adj"))+
-    geom_smooth(method='lm', aes(y = Y, col = "Y"))+
-    geom_smooth(method='lm', aes(y = Y_adj, col = "Y"))
-
-
+     geom_point(aes(y = Y, col = "Y")) + 
+     geom_point(aes(y = Y_adj, col = "Y_adj"))+
+     geom_smooth(method='lm', aes(y = Y, col = "reglineY"))+
+     geom_smooth(method='lm', aes(y = Y_adj, col = "reglineY_adj"))
+plot(plotted)
 
 ```
 
