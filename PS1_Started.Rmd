@@ -207,9 +207,10 @@ plotted<-ggplot(out, aes(V1, y = value, color = variable)) +
      geom_smooth(method='lm', aes(y = Y, col = "reglineY"))+
      geom_smooth(method='lm', aes(y = Y_adj, col = "reglineY_adj"))
 plot(plotted)
-
 ```
-
+```
+We distinguished the regression lines between  which changed the graph to refelct four different colors that represent the respected scatter plots and regression lines.
+```
 
 # Submission instructions:
 
